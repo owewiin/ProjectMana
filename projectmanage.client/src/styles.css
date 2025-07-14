@@ -1,0 +1,52 @@
+:root {
+    --lavender-50: #faf7ff;
+    --lavender-100: #f3ebff;
+    --lavender-200: #e9d5ff;
+    --lavender-300: #d8b4fe;
+    --lavender-400: #c084fc;
+    --lavender-500: #a855f7;
+    --lavender-600: #9333ea;
+    --lavender-700: #7c3aed;
+    --lavender-800: #6b21a8;
+    --lavender-900: #581c87;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--lavender-50) 0%, var(--lavender-100) 100%);
+    min-height: 100vh;
+    margin: 0;
+    color: var(--lavender-900);
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    transition: all 0.3s ease;
+    padding: 24px;
+    margin: 16px;
+  }
+  
+  .glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px -12px rgba(168, 85, 247, 0.25);
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, var(--lavender-500), var(--lavender-600));
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, var(--lavender-600), var(--lavender-700));
+    transform: translateY(-2px);
+  }
